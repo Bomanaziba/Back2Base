@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back2Bases", "Back2Bases.csproj", "{30691B65-45D6-44AD-B110-A132373F6506}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back2Bases", "Back2Bases.csproj", "{5B6A7C59-DFF4-46CC-AFB8-4EDFC8B8D729}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30691B65-45D6-44AD-B110-A132373F6506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30691B65-45D6-44AD-B110-A132373F6506}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30691B65-45D6-44AD-B110-A132373F6506}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30691B65-45D6-44AD-B110-A132373F6506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6A7C59-DFF4-46CC-AFB8-4EDFC8B8D729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6A7C59-DFF4-46CC-AFB8-4EDFC8B8D729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6A7C59-DFF4-46CC-AFB8-4EDFC8B8D729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6A7C59-DFF4-46CC-AFB8-4EDFC8B8D729}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
