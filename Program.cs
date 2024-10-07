@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Back2Base.MonthTwo.WeekOne;
 using WeekOne;
 
 Console.WriteLine("Hello, World!");
@@ -29,17 +30,17 @@ Console.WriteLine("Hello, World!");
 //Lambda Expression
 //Console.WriteLine(Back2Lambda.sqr(5));
 
-Action[] actions = new Action[3];
+//Action[] actions = new Action[3];
 
-for (int i = 0; i < 3; i++)
-    actions [i] = () => Console.Write (i); 
+//for (int i = 0; i < 3; i++)
+  //  actions [i] = () => Console.Write (i); 
     
-foreach (Action a in actions) 
-    a(); // 333
+//foreach (Action a in actions) 
+  //  a(); // 333
 
 
-static void stock_PriceChanged(object sender, EventArgs e)
-{
+//static void stock_PriceChanged(object sender, EventArgs e)
+//{
     //decimal increase = (e.LastPrice != 0)?(e.NewPrice - e.LastPrice)/e.LastPrice:e.NewPrice/e.NewPrice;
 
     //if(increase > 0.1M)
@@ -47,5 +48,12 @@ static void stock_PriceChanged(object sender, EventArgs e)
       //  Console.WriteLine("Alert, {0}% stock price increase!", Math.Round(increase*100, 2));
     //}
 
-    Console.WriteLine("Alert Price Changed!");
+  //  Console.WriteLine("Alert Price Changed!");
+//}
+
+var res = ArraysAndStrings.reverseArray(new List<int> {1, 4, 3, 2});
+
+foreach (var item in res)
+{
+    Console.Write($" {item}");
 }
