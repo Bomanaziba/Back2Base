@@ -13,10 +13,7 @@ public class ArraysAndStrings
 
     public static List<int> reverseArray(List<int> a)
     {
-        if(a == null || !a.Any())
-        {
-            return default;
-        }
+        if(a == null || !a.Any()) return default;
 
         int j = 0;
 
