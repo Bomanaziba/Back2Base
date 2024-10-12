@@ -51,9 +51,25 @@ Console.WriteLine("Hello, World!");
   //  Console.WriteLine("Alert Price Changed!");
 //}
 
-var res = ArraysAndStrings.reverseArray(new List<int> {1, 4, 3, 2});
+// var res = ArraysAndStrings.reverseArray(new List<int> {1, 4, 3, 2});
+
+// foreach (var item in res)
+// {
+//     Console.Write($" {item}");
+// }
+
+
+var res = ArraysAndStrings.dynamicArray(2, new List<List<int>>
+{ 
+  new List<int>{1, 0, 5}, 
+  new List<int>{1, 1, 7}, 
+  new List<int>{1, 0, 3}, 
+  new List<int>{2, 1, 0}, 
+  new List<int>{2, 1, 1}
+});
+
 
 foreach (var item in res)
 {
-    Console.Write($" {item}");
+  Console.WriteLine(item);
 }
