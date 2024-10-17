@@ -10,7 +10,6 @@ public class ArraysAndStrings
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY a as parameter.
      */
-
     public static List<int> reverseArray(List<int> a)
     {
         if(a == null || !a.Any()) return default;
@@ -38,7 +37,6 @@ public class ArraysAndStrings
      *  1. INTEGER n
      *  2. 2D_INTEGER_ARRAY queries
      */
-
     public static List<int> dynamicArray(int n, List<List<int>> queries)
     {
         List<int>[] arr = new List<int>[n];
@@ -89,6 +87,52 @@ public class ArraysAndStrings
 
     static int IdX (int x, int lastAnswer, int n) => (x ^ lastAnswer) % n;
 
+    /*
+     * Complete the 'rotateLeft' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts following parameters:
+     *  1. INTEGER d
+     *  2. INTEGER_ARRAY arr
+     */
 
+    public static List<int> rotateLeft(int d, List<int> arr)
+    {
+        List<int> arrAns = new();
+
+        for(int i = 0; i < arr.Count; i++)
+        {
+            int temp0 = arr[i];
+
+            //TODO: get the new index to replace value
+            int j = ManipulateIndex(i, arr.Count, d);
+
+            int temp1 = arr[j];
+
+            //arrAns.Add(temp1);
+            arr[i] = temp1;
+            arr[j] = temp0;
+        }
+
+        return arr;
+    }
+
+    static int ManipulateIndex(int i, int n, int d)
+    {
+        
+        int j = i-d;
+
+        if(i >= n/2)
+        {
+           j = n-1-d;
+        }
+
+        if(j < 0)
+        {
+            return n-1+j;
+        }
+
+        return j;
+    }
 
 }
